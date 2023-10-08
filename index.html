@@ -3,43 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Простий слайдер</title>
+    <!-- Підключення стилів Slick і Slick-carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <section class="products">
-        <!-- sorter -->
-        <div class="products__sort">
-            <label for="products__sort">Sort Product Price:</label>
-            <select name="sort" id="products__sort">
-                <option selected disabled>Select type SORT</option>
-                <option value="DESC">DESC</option>
-                <option value="ASC">ASC</option>
-            </select>
+    <div class="slider">
+        <div>
+            <img width="500" height="300" src="https://antonivtours.com/wp-content/uploads/2017/11/SHvejtsariya-evropejskaya-krasavitsa.jpg" alt="">
         </div>
-        <!-- filter -->
-        <div class="products__filter">
-            <!-- search  -->
-            <div class="products__filter_search">
-                <label for="search">Search:</label>
-                <input type="text" name="search" id="filter_search">
-            </div>
-                <label for="products__sort">Filter Products:</label>
-                <select name="filter" id="products__filter">
-                    <option selected disabled>Select type Filter</option>
-                    <option value="menClothing">men's clothing</option>
-                    <option value="jewelery">jewelery</option>
-                    <option value="electronics">electronics</option>
-                    <option value="womenClithing">women's clothing</option>
-                </select>
+        <div>
+            <img width="500" height="300" src="https://travel.24tv.ua/resources/photos/news/202107/1701059.jpg?v=1661261049000" alt="">
         </div>
-       
+        <div>
+            <img width="500" height="300" src="https://i.ytimg.com/vi/j4U-Yutgvi0/maxresdefault.jpg" alt="">
+        </div>
+    </div>
 
-        <div class="products__area">
-            <!-- products -->
-        </div>
+    <!-- Додані кнопки "Попередній" та "Наступний" слайди -->
+    <!-- <button class="prev">Попередній</button>
+    <button class="next">Наступний</button> -->
 
-    </section>
+    <!-- Підключення jQuery та Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="scripts/index.js"></script>
+    <!-- ОСОБЛИВА ПОДЯКА ЧАТУ GPT ЗА ПОЯСНЕННЯ РОБОТИ СЛАЙДЕРУ :) -->
 </body>
 </html>
